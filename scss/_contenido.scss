@@ -1,0 +1,56 @@
+.sectionA{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    margin: 20px;
+    h3{
+    align-self: center;
+
+    }
+    p{
+        align-self: center;
+        width: $ancho-total - 30%;
+        
+    }
+}
+
+.linea{
+    
+    border-bottom: solid 1px gray;
+    margin: 20px;
+    align-self: center;
+}
+
+.sectionB{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    margin: 20px;
+    h3{
+    align-self: center;
+
+    }
+    p{
+        align-self: center;
+        width: $ancho-total - 30%;
+        
+    }
+
+}
+
+.sectionC{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    margin: 20px;
+    h3{
+    align-self: center;
+
+    }
+    p{
+        align-self: center;
+        width: $ancho-total - 30%;
+        
+    }
+
+}

@@ -1,0 +1,24 @@
+
+.cartasPro{
+    background-color: $color-comple;
+
+    h3{
+        font-family: $fuente-texto;
+        text-align: center;
+    
+        padding: 20px;
+        color:white;
+    }
+    .cartasFlex{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        justify-self: center;
+
+        .card{
+            margin: 20px;
+        }    
+    }
+
+
+}

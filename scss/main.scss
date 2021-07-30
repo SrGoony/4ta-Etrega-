@@ -1,0 +1,19 @@
+@import "general";
+@import "cartas";
+@import "contenido";
+@import "footer";
+@import "grid";
+@import "multimedia";
+
+.header{
+    background-color: $color-principal;
+    .menu{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-items: flex-end;
+        background-color: $color-comple;
+        padding: 10px;
+    }
+}
+
+

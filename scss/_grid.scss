@@ -1,0 +1,104 @@
+.contenedor{
+    display: grid;
+    grid-template-areas:
+    "header         header"
+    "fotoPortada    fotoPortada"
+    "cartasPro      cartasPro"
+    "sectionA       sectionA"
+    "linea          linea"
+    "sectionB       foto1"
+    "foto2          sectionC"
+    "pie            pie"
+    ;
+}
+header{
+    grid-area: header;
+}
+
+.fotoPortada{
+    grid-area: fotoPortada;
+}
+
+.cartasPro{
+    grid-area: cartasPro;
+}
+
+.sectionA{
+    grid-area: sectionA;
+}
+
+.linea{
+    grid-area: linea;
+}
+
+.sectionB{
+    grid-area: sectionB;
+}
+
+.foto1{
+    grid-area: foto1;
+    background-image: url(../multimedia/fotoAntigua.jpg);
+    width: 80%; height: 300px;
+    background-position: center center;
+    background-size: cover;
+    justify-self: center;
+}
+
+.sectionC{
+    grid-area: sectionC;
+}
+
+.foto2{
+    grid-area: foto2;
+    background-image: url(../multimedia/cafeSem.jpg);
+    width: 80%; height: 300px;
+    background-position: center center;
+    background-size: cover;
+    justify-self: center;
+    
+}
+
+footer{
+    grid-area: pie;
+    margin-top: 20px;
+}
+
+/*-------------------RESPONSIVE-------------------*/
+
+    /*telefonos*/
+@media (max-width: 414px){
+    .contenedor{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "fotoPortada"
+        "cartasPro"
+        "sectionA"
+        "linea"
+        "sectionB"
+        "foto1"
+        "sectionC"
+        "foto2"
+        "pie"
+        ;
+    }
+}
+
+    /*tabletas*/
+@media (max-width:834px){
+    .contenedor{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "fotoPortada"
+        "cartasPro"
+        "sectionA"
+        "linea"
+        "sectionB"
+        "foto1"
+        "sectionC"
+        "foto2"
+        "pie"
+        ;
+    }
+}

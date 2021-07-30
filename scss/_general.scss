@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*VARIABLES*/
+
+$fuente-texto:'Abel', sans-serif;
+$color-principal: #5A5B69;
+$color-comple:#42434D;
+$ancho-total:100%;
+$pix-1: 2;
+
+p{
+    font-family: $fuente-texto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    h1{
+        font-family: 'Dancing Script', cursive;
+        font-size: 60px;
+        padding: 30px;
+        color: white;
+    }
+}
+
+.menu{
+    a{
+        margin:10px;
+        font-size: $pix-1 * 10px;
+    }
+}

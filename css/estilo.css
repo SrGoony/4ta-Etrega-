@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+/*VARIABLES*/
+p {
+  font-family: "Abel", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.header h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  padding: 30px;
+  color: white; }
+
+.menu a {
+  margin: 10px;
+  font-size: 20px; }
+
+.cartasPro {
+  background-color: #42434D; }
+  .cartasPro h3 {
+    font-family: "Abel", sans-serif;
+    text-align: center;
+    padding: 20px;
+    color: white; }
+  .cartasPro .cartasFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-self: center; }
+    .cartasPro .cartasFlex .card {
+      margin: 20px; }
+
+.sectionA {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: center;
+  margin: 20px; }
+  .sectionA h3 {
+    align-self: center; }
+  .sectionA p {
+    align-self: center;
+    width: 70%; }
+
+.linea {
+  border-bottom: solid 1px gray;
+  margin: 20px;
+  align-self: center; }
+
+.sectionB {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: center;
+  margin: 20px; }
+  .sectionB h3 {
+    align-self: center; }
+  .sectionB p {
+    align-self: center;
+    width: 70%; }
+
+.sectionC {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: center;
+  margin: 20px; }
+  .sectionC h3 {
+    align-self: center; }
+  .sectionC p {
+    align-self: center;
+    width: 70%; }
+
+.pie {
+  background-color: #42434D;
+  display: flex;
+  align-self: center; }
+  .pie p {
+    color: white;
+    padding: 20px;
+    text-align: center; }
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "header         header" "fotoPortada    fotoPortada" "cartasPro      cartasPro" "sectionA       sectionA" "linea          linea" "sectionB       foto1" "foto2          sectionC" "pie            pie"; }
+
+header {
+  grid-area: header; }
+
+.fotoPortada {
+  grid-area: fotoPortada; }
+
+.cartasPro {
+  grid-area: cartasPro; }
+
+.sectionA {
+  grid-area: sectionA; }
+
+.linea {
+  grid-area: linea; }
+
+.sectionB {
+  grid-area: sectionB; }
+
+.foto1 {
+  grid-area: foto1;
+  background-image: url(../multimedia/fotoAntigua.jpg);
+  width: 80%;
+  height: 300px;
+  background-position: center center;
+  background-size: cover;
+  justify-self: center; }
+
+.sectionC {
+  grid-area: sectionC; }
+
+.foto2 {
+  grid-area: foto2;
+  background-image: url(../multimedia/cafeSem.jpg);
+  width: 80%;
+  height: 300px;
+  background-position: center center;
+  background-size: cover;
+  justify-self: center; }
+
+footer {
+  grid-area: pie;
+  margin-top: 20px; }
+
+/*-------------------RESPONSIVE-------------------*/
+/*telefonos*/
+@media (max-width: 414px) {
+  .contenedor {
+    display: grid;
+    grid-template-areas: "header" "fotoPortada" "cartasPro" "sectionA" "linea" "sectionB" "foto1" "sectionC" "foto2" "pie"; } }
+
+/*tabletas*/
+@media (max-width: 834px) {
+  .contenedor {
+    display: grid;
+    grid-template-areas: "header" "fotoPortada" "cartasPro" "sectionA" "linea" "sectionB" "foto1" "sectionC" "foto2" "pie"; } }
+
+.header {
+  background-color: #5A5B69; }
+  .header .menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: flex-end;
+    background-color: #42434D;
+    padding: 10px; }
